@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon_Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="amazon_clone.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar" id="navbar">
+            <div class="nav-logo">
+                <div class="logo hover-border">
+                    <a href="https://www.amazon.com/">
+                        <i class="fa-brands fa-amazon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="address hover-border">
+                <div class="add-1">
+                    <i class="fa-solid fa-location-dot add-logo"></i>
+                </div>
+                <div class="add-2">
+                    <p id="add1">Deliver to</p>
+                    <p id="add2">India</p>
+                </div>
+            </div>
+            <!-- we can do this by following method, just use display flex when needed -->
+            <!-- <div class="address hover-border">
+                <div class="add-1">
+                    <p>Deliver to</p>
+                </div>
+                <div class="add-2">
+                    <i class="fa-solid fa-location-dot add-logo"></i>
+                    <p>India</p>
+                </div>
+            </div> -->
+
+            <div class="nav-Searching">
+                <div class="Select-button">
+                    <select id="Select">
+                        <option>All</option>
+                    </select>
+                </div>
+                <div class="Search-input">
+                    <input type="search" placeholder="Search Amazon" id="Search">
+                </div>
+                <div class="Search-icon">
+                    <i class="fa-solid fa-magnifying-glass" id="Search-icon"></i>
+                </div>
+            </div>
+
+            <div class="nav-language hover-border">
+                <div class="select-lang">
+                    <select id="select-lang">
+                        <option value="English"><img src="united-states.png" alt="flag">En</option>
+                        <!-- cant use img inside option directly     need js -->
+                        <option value="Hindi">Hi</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="nav-Signin hover-border">
+                <p class="font1">Hello, sign in</p>
+                <p class="font2">Account & Lists</p>
+            </div>
+
+            <div class="nav-orders hover-border">
+                <p class="font1">Returns</p>
+                <p class="font2">& Orders</p>
+            </div>
+
+            <div class="nav-cart hover-border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p class="Cart font2">Cart</p>
+            </div>
+
+        </div>
+
+        <div class="panel">
+            <div class="panel-all hover-border">
+                <i class="fa-solid fa-bars"></i>
+                <p class="font2">All</p>
+            </div>
+
+            <div class="panel-options">
+                <p class="hover-border" id="p1">Today's Deals</p>
+                <p class="hover-border" id="p2">Customer Service</p>
+                <p class="hover-border" id="p3">Registry</p>
+                <p class="hover-border" id="p4">Gift Cards</p>
+                <p class="hover-border" id="p5">Sell</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="Hero-section">
+        <div class="hero-msg">
+            <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local
+                delivery. <a href="https://www.amazon.in/">Click here to go to amazon.in</a></p>
+        </div>
+    </div>
+
+    <div class="body-content">
+        <div class="content-box">
+            <div class="box1 box_1">
+                <h2>Delightful deals for everyone</h2>
+                <a href="https://www.amazon.com/goldbox/?_encoding=UTF8&pd_rd_w=yIZWx&content-id=amzn1.sym.761a767a-2c8a-472f-b5d0-e9015b0b75ec&pf_rd_p=761a767a-2c8a-472f-b5d0-e9015b0b75ec&pf_rd_r=ZQ4G0K68A74TN3FPKX4A&pd_rd_wg=QBBRA&pd_rd_r=43e22c51-3f4f-4ed5-b069-04c5f851a58f&ref_=pd_hp_d_atf_unk"
+                    target="_blank">
+                    <img src="k1.jpg" alt="image">
+                </a>
+                <a href="https://www.amazon.com/goldbox/?_encoding=UTF8&pd_rd_w=yIZWx&content-id=amzn1.sym.761a767a-2c8a-472f-b5d0-e9015b0b75ec&pf_rd_p=761a767a-2c8a-472f-b5d0-e9015b0b75ec&pf_rd_r=ZQ4G0K68A74TN3FPKX4A&pd_rd_wg=QBBRA&pd_rd_r=43e22c51-3f4f-4ed5-b069-04c5f851a58f&ref_=pd_hp_d_atf_unk"
+                    class="Shop-now">Shop now</a>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <div class="box2 box_4">
+                <h2>Shop gifts by recipient</h2>
+                <div class="content-imgs">
+                    <a href="https://www.amazon.com/s/?_encoding=UTF8&k=gifts%20for%20him&pd_rd_w=KxzHU&content-id=amzn1.sym.56480f96-bcee-40ab-b6b8-6a523ad38f04&pf_rd_p=56480f96-bcee-40ab-b6b8-6a523ad38f04&pf_rd_r=ZQ4G0K68A74TN3FPKX4A&pd_rd_wg=QBBRA&pd_rd_r=43e22c51-3f4f-4ed5-b069-04c5f851a58f&ref_=pd_hp_d_atf_unk"
+                        target="_blank">
+                        <img src="i1.jpg" alt="image">
+                        <p>For him</p>
+                    </a>
+                    <a href="https://www.amazon.com/s/?_encoding=UTF8&k=gifts%20for%20her&pd_rd_w=KxzHU&content-id=amzn1.sym.56480f96-bcee-40ab-b6b8-6a523ad38f04&pf_rd_p=56480f96-bcee-40ab-b6b8-6a523ad38f04&pf_rd_r=ZQ4G0K68A74TN3FPKX4A&pd_rd_wg=QBBRA&pd_rd_r=43e22c51-3f4f-4ed5-b069-04c5f851a58f&ref_=pd_hp_d_atf_unk"
+                        target="_blank">
+                        <img src="i2.jpg" alt="image">
+                        <p>For her</p>
+                    </a>
+                </div>
+                <br>
+                <div class="content-imgs">
+                    <a href="https://www.amazon.com/s/?_encoding=UTF8&k=gifts%20for%20kids&pd_rd_w=KxzHU&content-id=amzn1.sym.56480f96-bcee-40ab-b6b8-6a523ad38f04&pf_rd_p=56480f96-bcee-40ab-b6b8-6a523ad38f04&pf_rd_r=ZQ4G0K68A74TN3FPKX4A&pd_rd_wg=QBBRA&pd_rd_r=43e22c51-3f4f-4ed5-b069-04c5f851a58f&ref_=pd_hp_d_atf_unk"
+                        target="_blank">
+                        <img src="i3.jpg" alt="image">
+                        <p>For kids</p>
+                    </a>
+                    <a href="https://www.amazon.com/s/?_encoding=UTF8&k=gifts%20for%20teens&pd_rd_w=KxzHU&content-id=amzn1.sym.56480f96-bcee-40ab-b6b8-6a523ad38f04&pf_rd_p=56480f96-bcee-40ab-b6b8-6a523ad38f04&pf_rd_r=ZQ4G0K68A74TN3FPKX4A&pd_rd_wg=QBBRA&pd_rd_r=43e22c51-3f4f-4ed5-b069-04c5f851a58f&ref_=pd_hp_d_atf_unk"
+                        target="_blank">
+                        <img src="i4.jpg" alt="image">
+                        <p>For teens</p>
+                    </a>
+                </div>
+                <a href="https://www.amazon.com/s/?_encoding=UTF8&k=gifts&pd_rd_w=KxzHU&content-id=amzn1.sym.56480f96-bcee-40ab-b6b8-6a523ad38f04&pf_rd_p=56480f96-bcee-40ab-b6b8-6a523ad38f04&pf_rd_r=ZQ4G0K68A74TN3FPKX4A&pd_rd_wg=QBBRA&pd_rd_r=43e22c51-3f4f-4ed5-b069-04c5f851a58f&ref_=pd_hp_d_atf_unk"
+                    class="font3">Shop all gifts
+                    <!-- <p class="font3">Shop all gifts</p> -->
+                </a>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <div class="box3 box_4">
+                <h2>New home arrivals under $50</h2>
+                <div class="content-imgs">
+                    <a
+                        href="https://www.amazon.com/s/?_encoding=UTF8&k=kitchen%20and%20dining&rh=p_36%3A-5000&s=date-desc-rank&pd_rd_w=n1ZBW&content-id=amzn1.sym.82545daf-9a90-4f78-b3cc-f9f3e191c9ad&pf_rd_p=82545daf-9a90-4f78-b3cc-f9f3e191c9ad&pf_rd_r=ZQ4G0K68A74TN3FPKX4A&pd_rd_wg=QBBRA&pd_rd_r=43e22c51-3f4f-4ed5-b069-04c5f851a58f&ref_=pd_hp_d_atf_unk">
+                        <img src="j1.jpg" alt="image">
+                        <p>Kitchen & dining</p>
+                    </a>
+
+                    <a
+                        href="https://www.amazon.com/s/?_encoding=UTF8&k=home%20improvement&i=tools&rh=n%3A228013%2Cp_36%3A-5000&dc=&ds=v1%3AU%2F9vxcfd6LLqNGLcdfGjetkk3KJGd0ZuNoxWMV3LcAk&pd_rd_w=n1ZBW&content-id=amzn1.sym.82545daf-9a90-4f78-b3cc-f9f3e191c9ad&pf_rd_p=82545daf-9a90-4f78-b3cc-f9f3e191c9ad&pf_rd_r=ZQ4G0K68A74TN3FPKX4A&pd_rd_wg=QBBRA&pd_rd_r=43e22c51-3f4f-4ed5-b069-04c5f851a58f&ref_=pd_hp_d_atf_unk">
+                        <img src="j2.jpg" alt="images">
+                        <p>Home improvement</p>
+                    </a>
+                </div>
+                <br>
+                <div class="content-imgs">
+                    <a
+                        href="https://www.amazon.com/s/?_encoding=UTF8&k=home%20decor&rh=p_36%3A-5000&s=date-desc-rank&pd_rd_w=n1ZBW&content-id=amzn1.sym.82545daf-9a90-4f78-b3cc-f9f3e191c9ad&pf_rd_p=82545daf-9a90-4f78-b3cc-f9f3e191c9ad&pf_rd_r=ZQ4G0K68A74TN3FPKX4A&pd_rd_wg=QBBRA&pd_rd_r=43e22c51-3f4f-4ed5-b069-04c5f851a58f&ref_=pd_hp_d_atf_unk">
+                        <img src="j3.jpg" alt="image">
+                        <p>D&#233;cor</p>
+                    </a>
+                    <a
+                        href="https://www.amazon.com/s/?_encoding=UTF8&k=bedding%20and%20bath&rh=p_36%3A-5000&s=date-desc-rank&pd_rd_w=n1ZBW&content-id=amzn1.sym.82545daf-9a90-4f78-b3cc-f9f3e191c9ad&pf_rd_p=82545daf-9a90-4f78-b3cc-f9f3e191c9ad&pf_rd_r=ZQ4G0K68A74TN3FPKX4A&pd_rd_wg=QBBRA&pd_rd_r=43e22c51-3f4f-4ed5-b069-04c5f851a58f&ref_=pd_hp_d_atf_unk">
+                        <img src="j4.jpg" alt="image">
+                        <p>Bedding & bath</p>
+                    </a>
+                </div>
+                <a href="https://www.amazon.com/s/?_encoding=UTF8&k=home&i=garden&rh=n%3A1055398%2Cp_36%3A-5000&s=exact-aware-popularity-rank&dc=&pd_rd_w=n1ZBW&content-id=amzn1.sym.82545daf-9a90-4f78-b3cc-f9f3e191c9ad&pf_rd_p=82545daf-9a90-4f78-b3cc-f9f3e191c9ad&pf_rd_r=ZQ4G0K68A74TN3FPKX4A&pd_rd_wg=QBBRA&pd_rd_r=43e22c51-3f4f-4ed5-b069-04c5f851a58f&ref_=pd_hp_d_atf_unk"
+                    class="font3">Shop the latest from Home</a>
+            </div>
+        </div>
+
+        <div class="content-box">
+            <div class="box4 box_1">
+                <h2>Small gifts under $20</h2>
+                <a href="https://www.amazon.com/s/?_encoding=UTF8&k=small%20gifts&rh=p_36%3A-2000&pd_rd_w=iV6am&content-id=amzn1.sym.853f9d03-d994-493f-a472-146903b8d893&pf_rd_p=853f9d03-d994-493f-a472-146903b8d893&pf_rd_r=ZQ4G0K68A74TN3FPKX4A&pd_rd_wg=QBBRA&pd_rd_r=43e22c51-3f4f-4ed5-b069-04c5f851a58f&ref_=pd_hp_d_atf_unk"
+                    target="_blank">
+                    <img src="k_2.jpg" alt="image">
+                </a>
+                <a href="https://www.amazon.com/s/?_encoding=UTF8&k=small%20gifts&rh=p_36%3A-2000&pd_rd_w=iV6am&content-id=amzn1.sym.853f9d03-d994-493f-a472-146903b8d893&pf_rd_p=853f9d03-d994-493f-a472-146903b8d893&pf_rd_r=ZQ4G0K68A74TN3FPKX4A&pd_rd_wg=QBBRA&pd_rd_r=43e22c51-3f4f-4ed5-b069-04c5f851a58f&ref_=pd_hp_d_atf_unk"
+                    class="Shop-now">Shop now</a>
+            </div>
+        </div>
+
+        <div class="content-box  lane2">
+            <div class="box5 box_1">
+                <h2>Gaming Corner</h2>
+                <a
+                    href="https://www.amazon.com/b/?_encoding=UTF8&node=121739139011&pd_rd_w=9gPcv&content-id=amzn1.sym.c45d7fba-a5c7-4143-9828-71766e9ff443&pf_rd_p=c45d7fba-a5c7-4143-9828-71766e9ff443&pf_rd_r=D6YVKCKYHV751BCFA55T&pd_rd_wg=32TA7&pd_rd_r=c52778e0-e754-4d0d-8716-2e3fd6d28680&ref_=pd_hp_d_btf_unk">
+                    <img src="g1.jpg" alt="image">
+                </a>
+                <a href="https://www.amazon.com/b/?_encoding=UTF8&node=121739139011&pd_rd_w=9gPcv&content-id=amzn1.sym.c45d7fba-a5c7-4143-9828-71766e9ff443&pf_rd_p=c45d7fba-a5c7-4143-9828-71766e9ff443&pf_rd_r=D6YVKCKYHV751BCFA55T&pd_rd_wg=32TA7&pd_rd_r=c52778e0-e754-4d0d-8716-2e3fd6d28680&ref_=pd_hp_d_btf_unk"
+                    class="Shop-now">For all your gaming needs</a>
+            </div>
+        </div>
+
+        <div class="content-box  lane2">
+            <div class="box6 box_1">
+                <h2>Deals in PCs</h2>
+                <a
+                    href="https://www.amazon.com/gp/goldbox/?ie=UTF8&ref_=nav_cs_gb&discounts-widget=%2522%257B%255C%2522state%255C%2522%253A%257B%255C%2522refinementFilters%255C%2522%253A%257B%255C%2522departments%255C%2522%253A%255B%255C%2522493964%252F541966%255C%2522%255D%257D%257D%252C%255C%2522version%255C%2522%253A1%257D%2522&pd_rd_w=RxFBO&content-id=amzn1.sym.d5b550a4-aad3-4202-91c0-fa4013f74c17&pf_rd_p=d5b550a4-aad3-4202-91c0-fa4013f74c17&pf_rd_r=D6YVKCKYHV751BCFA55T&pd_rd_wg=HMPcK&pd_rd_r=8fa6c206-e14a-462b-aec1-8a2f7e045a95">
+                    <img src="Fuji_Desktop_Single_image_EBF_1x_v1._SY304_CB573698005_.jpg" alt="image">
+                </a>
+                <a href="https://www.amazon.com/gp/goldbox/?ie=UTF8&ref_=nav_cs_gb&discounts-widget=%2522%257B%255C%2522state%255C%2522%253A%257B%255C%2522refinementFilters%255C%2522%253A%257B%255C%2522departments%255C%2522%253A%255B%255C%2522493964%252F541966%255C%2522%255D%257D%257D%252C%255C%2522version%255C%2522%253A1%257D%2522&pd_rd_w=RxFBO&content-id=amzn1.sym.d5b550a4-aad3-4202-91c0-fa4013f74c17&pf_rd_p=d5b550a4-aad3-4202-91c0-fa4013f74c17&pf_rd_r=D6YVKCKYHV751BCFA55T&pd_rd_wg=HMPcK&pd_rd_r=8fa6c206-e14a-462b-aec1-8a2f7e045a95"
+                    class="Shop-now">Shop now</a>
+            </div>
+        </div>
+
+        <div class="content-box lane2">
+            <div class="box7 box_4">
+                <h2>Deals on fashion</h2>
+                <div class="content-imgs">
+                    <a
+                        href="https://www.amazon.com/gp/goldbox/?ie=UTF8&discounts-widget=%2522%257B%255C%2522state%255C%2522%253A%257B%255C%2522refinementFilters%255C%2522%253A%257B%255C%2522departments%255C%2522%253A%255B%255C%25227141124011%252F7147440011%255C%2522%255D%257D%257D%252C%255C%2522version%255C%2522%253A1%257D%2522&pd_rd_w=hnDXH&content-id=amzn1.sym.8f641aba-549b-48c7-9e09-2db15fa0de93&pf_rd_p=8f641aba-549b-48c7-9e09-2db15fa0de93&pf_rd_r=D6YVKCKYHV751BCFA55T&pd_rd_wg=32TA7&pd_rd_r=c52778e0-e754-4d0d-8716-2e3fd6d28680&ref_=pd_hp_d_btf_unk">
+                        <img src="a1.jpg" alt="image">
+                        <p>Women's</p>
+                    </a>
+
+                    <a
+                        href="https://www.amazon.com/gp/goldbox/?ie=UTF8&discounts-widget=%2522%257B%255C%2522state%255C%2522%253A%257B%255C%2522refinementFilters%255C%2522%253A%257B%255C%2522departments%255C%2522%253A%255B%255C%25227141124011%252F7147441011%255C%2522%255D%257D%257D%252C%255C%2522version%255C%2522%253A1%257D%2522&pd_rd_w=hnDXH&content-id=amzn1.sym.8f641aba-549b-48c7-9e09-2db15fa0de93&pf_rd_p=8f641aba-549b-48c7-9e09-2db15fa0de93&pf_rd_r=D6YVKCKYHV751BCFA55T&pd_rd_wg=32TA7&pd_rd_r=c52778e0-e754-4d0d-8716-2e3fd6d28680&ref_=pd_hp_d_btf_unk">
+                        <img src="a2.jpg" alt="images">
+                        <p>Men's</p>
+                    </a>
+                </div>
+                <br>
+                <div class="content-imgs">
+                    <a
+                        href="https://www.amazon.com/s/?_encoding=UTF8&k=shoes%20fashion&rh=p_n_deal_type%3A23566064011&pd_rd_w=hnDXH&content-id=amzn1.sym.8f641aba-549b-48c7-9e09-2db15fa0de93&pf_rd_p=8f641aba-549b-48c7-9e09-2db15fa0de93&pf_rd_r=D6YVKCKYHV751BCFA55T&pd_rd_wg=32TA7&pd_rd_r=c52778e0-e754-4d0d-8716-2e3fd6d28680&ref_=pd_hp_d_btf_unk">
+                        <img src="a3.jpg" alt="image">
+                        <p>Shoes</p>
+                    </a>
+                    <a
+                        href="https://www.amazon.com/s/?_encoding=UTF8&k=fashion%20gifts&rh=p_n_deal_type%3A23566064011&pd_rd_w=hnDXH&content-id=amzn1.sym.8f641aba-549b-48c7-9e09-2db15fa0de93&pf_rd_p=8f641aba-549b-48c7-9e09-2db15fa0de93&pf_rd_r=D6YVKCKYHV751BCFA55T&pd_rd_wg=32TA7&pd_rd_r=c52778e0-e754-4d0d-8716-2e3fd6d28680&ref_=pd_hp_d_btf_unk">
+                        <img src="a4.jpg" alt="image">
+                        <p>Bedding & bath</p>
+                    </a>
+                </div>
+                <a href="https://www.amazon.com/s/?_encoding=UTF8&k=home&i=garden&rh=n%3A1055398%2Cp_36%3A-5000&s=exact-aware-popularity-rank&dc=&pd_rd_w=n1ZBW&content-id=amzn1.sym.82545daf-9a90-4f78-b3cc-f9f3e191c9ad&pf_rd_p=82545daf-9a90-4f78-b3cc-f9f3e191c9ad&pf_rd_r=ZQ4G0K68A74TN3FPKX4A&pd_rd_wg=QBBRA&pd_rd_r=43e22c51-3f4f-4ed5-b069-04c5f851a58f&ref_=pd_hp_d_atf_unk"
+                    class="font3">Shop all fashion deals</a>
+            </div>
+        </div>
+
+        <div class="content-box lane2">
+            <div class="box8 box_4">
+                <h2>Deals on fashion</h2>
+                <div class="content-imgs">
+                    <a
+                        href="https://www.amazon.com/b/?_encoding=UTF8&ie=UTF8&node=87586343011&pd_rd_w=jX6gg&content-id=amzn1.sym.d7b94f64-4564-4184-a533-8d6d81374732&pf_rd_p=d7b94f64-4564-4184-a533-8d6d81374732&pf_rd_r=D6YVKCKYHV751BCFA55T&pd_rd_wg=HMPcK&pd_rd_r=8fa6c206-e14a-462b-aec1-8a2f7e045a95&ref_=pd_hp_d_atf_unk">
+                        <img src="b1.jpg" alt="image">
+                        <p>Baskets & hampers</p>
+                    </a>
+
+                    <a
+                        href="https://www.amazon.com/b/?_encoding=UTF8&ie=UTF8&node=87586178011&pd_rd_w=jX6gg&content-id=amzn1.sym.d7b94f64-4564-4184-a533-8d6d81374732&pf_rd_p=d7b94f64-4564-4184-a533-8d6d81374732&pf_rd_r=D6YVKCKYHV751BCFA55T&pd_rd_wg=HMPcK&pd_rd_r=8fa6c206-e14a-462b-aec1-8a2f7e045a95&ref_=pd_hp_d_atf_unk">
+                        <img src="b2.jpg" alt="images">
+                        <p>Hardware</p>
+                    </a>
+                </div>
+                <br>
+                <div class="content-imgs">
+                    <a
+                        href="https://www.amazon.com/b/?_encoding=UTF8&ie=UTF8&node=87586177011&pd_rd_w=jX6gg&content-id=amzn1.sym.d7b94f64-4564-4184-a533-8d6d81374732&pf_rd_p=d7b94f64-4564-4184-a533-8d6d81374732&pf_rd_r=D6YVKCKYHV751BCFA55T&pd_rd_wg=HMPcK&pd_rd_r=8fa6c206-e14a-462b-aec1-8a2f7e045a95&ref_=pd_hp_d_atf_unk">
+                        <img src="b3.jpg" alt="image">
+                        <p>Accent furniture</p>
+                    </a>
+                    <a
+                        href="https://www.amazon.com/b/?_encoding=UTF8&ie=UTF8&node=87586176011&pd_rd_w=jX6gg&content-id=amzn1.sym.d7b94f64-4564-4184-a533-8d6d81374732&pf_rd_p=d7b94f64-4564-4184-a533-8d6d81374732&pf_rd_r=D6YVKCKYHV751BCFA55T&pd_rd_wg=HMPcK&pd_rd_r=8fa6c206-e14a-462b-aec1-8a2f7e045a95&ref_=pd_hp_d_atf_unk">
+                        <img src="b4.jpg" alt="image">
+                        <p>Wallpaper & paint</p>
+                    </a>
+                </div>
+                <a href="https://www.amazon.com/s/?_encoding=UTF8&k=home&i=garden&rh=n%3A1055398%2Cp_36%3A-5000&s=exact-aware-popularity-rank&dc=&pd_rd_w=n1ZBW&content-id=amzn1.sym.82545daf-9a90-4f78-b3cc-f9f3e191c9ad&pf_rd_p=82545daf-9a90-4f78-b3cc-f9f3e191c9ad&pf_rd_r=ZQ4G0K68A74TN3FPKX4A&pd_rd_wg=QBBRA&pd_rd_r=43e22c51-3f4f-4ed5-b069-04c5f851a58f&ref_=pd_hp_d_atf_unk"
+                    class="font3">Shop home products</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="back-to-top"><a href="#navbar">Back to top</a></div>
+
+        <div class="footer-content">
+            <hr>
+            <div id="block1">
+                <p class="heading">Get to Know Us</p>
+                <p>Careers</p>
+                <p>Blog</p>
+                <p>About Amazon</p>
+                <p>Investor Relations</p>
+                <p>Amazon Devices</p>
+                <p>Amazon Science</p>
+            </div>
+            
+            <div id="block2">
+                <p class="heading">Make Money with Us</p>
+                <p>Sell apps on Amazon</p>
+                <p>Sell on Amazon Business</p>
+                <p>Sell apps on Amazon</p>
+                <p>Become an Affiliate</p>
+                <p>Advertise Your Products</p>
+                <p>Self-Publish with Us</p>
+                <p>Host an Amazon Hub</p>
+                <p>See More Make Money with Us</p>
+            </div>	
+            
+            <div id="block3">
+                <p class="heading">Amazon Payment Products</p>
+                <p>Amazon Business Card</p>
+                <p>Shop with Points</p>
+                <p>Reload Your Balance</p>
+                <p>Amazon Currency Converter</p>
+            </div>
+            
+            <div id="block4">
+                <p class="heading">Let Us Help You<hr></p>
+                
+                <p>Amazon and COVID-19</p>
+                <p>Your Account</p>
+                <p>Your Orders</p>
+                <p>Shipping Rates & Policies</p>
+                <p>Returns & Replacements</p>
+                <p>Manage Your Content and Devices</p>
+                <p>Help</p>
+            </div>
+
+            <hr>
+        </div>
+        <!-- <hr> -->
+        <div class="footer-logo">
+            <a href="https://www.amazon.com/">
+                <i class="fa-brands fa-amazon"></i>
+            </a>
+        </div>
+        <!-- <hr> -->
+        <div class="last-panel">
+            <div id="pages">
+                <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508088&ref_=footer_cou">Condition of Use</a>
+                <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=468496&ref_=footer_privacy">Privacy Notice</a>
+                <a href="https://www.amazon.com/gp/help/customer/display.html?ie=UTF8&nodeId=TnACMrGVghHocjL8KB&ref_=footer_consumer_health_data_privacy">Consumer Health Data Privacy Disclosure</a>
+                <a href="https://www.amazon.com/privacyprefs?ref_=footer_iba">Your Ads Privacy Choices</a>
+            </div>
+            <div id="copyright">
+                <p>© 1996-2024, Amazon.com, Inc. or its affiliates</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
